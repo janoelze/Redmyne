@@ -14,6 +14,7 @@ $ python /path/redmyne/app.py -k <YOURAPIKEY>
 |   Due: 2012/11/08
 |   Estimated Hours: 1.0
 |   Progress: [#         ] 10%
+|
 | ISSUE #980 - Prio: Normal
 |   >> Fix Drag'n'Drop Bug @ BugProject
 |   Due: 2012/11/09
