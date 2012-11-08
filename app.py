@@ -10,8 +10,7 @@ API_KEY = ''
 
 def get_opts():
     parser = OptionParser()
-    parser.add_option("-k", "--key", dest="key",
-                      help="Your Redmine API Key.", metavar="KEY")
+    parser.add_option("-k", "--key", dest="key", help="Your Redmine API Key.", metavar="KEY")
     return parser.parse_args()
 
 
