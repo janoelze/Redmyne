@@ -31,7 +31,6 @@ def l(m): print '| %s' % m
 
 
 def format_issues(json_string):
-    pass
     response = json.loads(json_string)
     l("You've got %s open isssues:\n|" % (response['total_count']))
     for issue in response['issues']:
