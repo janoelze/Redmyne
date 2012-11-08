@@ -45,6 +45,7 @@ def format_issues(json_string):
             l('\tDue: %s' % issue['due_date'])
             l('\tEstimated Hours: %s' % (issue['estimated_hours']))
             l('\tProgress: %s' % (get_percentage(issue['done_ratio'])))
+            l('')
 
 if __name__ == "__main__":
     (opts, args) = get_opts()
