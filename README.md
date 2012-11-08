@@ -7,7 +7,7 @@ Redmyne gives you a quick glimpse at your open issues.
 
 ```
 $ python /path/redmyne/app.py -k <YOURAPIKEY>
-| You've got 2 open isssues:
+| You've got 2 open issues:
 |
 | ISSUE #981 - Prio: ALARM
 |   >> Check permissions on client account @ SecretProject
