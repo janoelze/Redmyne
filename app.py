@@ -31,7 +31,7 @@ def l(m): print '| %s' % m
 
 def format_issues(json_string):
     response = json.loads(json_string)
-    l("You've got %s open isssues:\n|" % (response['total_count']))
+    l("You've got %s open issues:\n|" % (response['total_count']))
     for issue in response['issues']:
         if issue['subject'] != '':
             l('ISSUE #%s - Prio: %s' % (issue['id'], issue[
