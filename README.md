@@ -13,8 +13,10 @@ $ python /path/redmyne/app.py -k <YOURAPIKEY>
 |   >> Check permissions on client account @ SecretProject
 |   Due: 2012/11/08
 |   Estimated Hours: 1.0
+|   Progress: [#         ] 10%
 | ISSUE #980 - Prio: Normal
 |   >> Fix Drag'n'Drop Bug @ BugProject
 |   Due: 2012/11/09
 |   Estimated Hours: 4.0
+|   Progress: [####      ] 40%
 ```

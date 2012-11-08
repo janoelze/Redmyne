@@ -13,6 +13,11 @@ def get_opts():
     parser.add_option("-k", "--key", dest="key", help="Your Redmine API Key.", metavar="KEY")
     return parser.parse_args()
 
+def get_percentage(ratio):
+    i = (int(ratio))
+    max = 10
+    return '[{0}{1}] {2}%'.format('#'*(i/10),' '*(max-i/10),i)
+
 
 def get_issues():
     params = {
@@ -39,6 +44,7 @@ def format_issues(json_string):
             l('\t>> %s @ %s' % (issue['subject'], issue['project']['name']))
             l('\tDue: %s' % issue['due_date'])
             l('\tEstimated Hours: %s' % (issue['estimated_hours']))
+            l('\tProgress: %s' % (get_percentage(issue['done_ratio'])))
 
 if __name__ == "__main__":
     (opts, args) = get_opts()
